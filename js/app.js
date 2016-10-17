@@ -97,12 +97,12 @@ function showQuestion() {
 		showSummary();
 	}
 
-function NewGame() {
-	$('.new-game').on('click', 'button');
-	score = 0;
-	currentQuestion = 0;
-	showQuestion();
-};
+// function NewGame() {
+// 	$('.new-game').on('click', 'button');
+// 	score = 0;
+// 	currentQuestion = 0;
+// 	showQuestion();
+// }
 
 };
 
