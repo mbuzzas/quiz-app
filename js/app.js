@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+console.log("here");
 var score = 0;
 var currentQuestion = 0;
 var quiz = [
@@ -63,6 +63,10 @@ $('.answers').on('click', '.qbox', function() {
 	answerQuestion(guess);
 });
 
+$('.new-game').click(function(){
+	newGame();
+});
+
 function answerQuestion(guess) {
 	var question = quiz[currentQuestion];
 	if (guess == question.rightAnswer) {
@@ -92,18 +96,20 @@ function showQuestion() {
 									'<div class="answer">'+questionObj.answers[i]+'</div>';
 			html += '</div>';
 		}
-		$('answers').html(html);
+		$('.answers').html(html);
 	} else {
 		showSummary();
 	}
+}
 
-// function NewGame() {
-// 	$('.new-game').on('click', 'button');
-// 	score = 0;
-// 	currentQuestion = 0;
-// 	showQuestion();
-// }
-
-};
+function newGame() {
+	$('.summary').hide();
+	$('.questions-panel').show();
+	$('.question').show();
+	$('.answers').show();
+	score = 0;
+	currentQuestion = 0;
+	showQuestion();
+}
 
 });
