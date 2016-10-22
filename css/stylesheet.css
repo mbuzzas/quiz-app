@@ -4,6 +4,8 @@ body {
 	text-align: center;
 	background-image: url('images/food-background-pictures-20.jpg');
 	background-size: cover;
+	background-repeat: no-repeat;
+/*	background-position: bottom center;*/
 	font-size: 25px;
 	color: #fef2e4;
 }
@@ -26,12 +28,13 @@ body {
 }
 
 .content {
-	width: 950px;
-	margin: 50px auto;
-	padding: 30px;
+	height: 250px;
+	width: 94%;
+	margin: auto;
+	padding: 25px;
 	text-align: center;
 	border-radius: 30px;
-	padding-top: 0;
+	background-color: rgba(0,0,0,0,0.8);
 }
 
 .summary {
@@ -52,12 +55,13 @@ body {
 	border-color: #fd974f;
 	border-style: solid;
 	width: 135px;
+	margin: 0 25px;
 }
 
 .panel-title {
 	background-color: #fd974f;
 	padding: 7px;
-	font-size: 20px
+	font-size: 20px;
 }
 
 .panel-body {
@@ -66,8 +70,8 @@ body {
 
 .question {
 	width: 82%;
-	float: right;
-	margin: 0;
+	float: none;
+	margin: 0 auto;
 	font-size: 35px;
 }
 
@@ -78,12 +82,12 @@ body {
 .qbox {
 	cursor: pointer;
 	border-radius: 30px;
-	width: 45%;
+	width: 46%;
 	float: left;
 	border-color: #c60000;
 	border-style: solid;
 	border-width: 3px;
-	margin: 0 41px 20px 0;
+	margin: 0 0.5% 20px 0.5%;
 }
 
 .answerNumber {
